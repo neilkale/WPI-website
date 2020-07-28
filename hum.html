@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styleSheets/myStyle.css">
+  <title>Humanities</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="js/tabs.js"></script>
+</head>
+
+<!-- Title and Nav Bar -->
+
+<body>
+
+  <div>
+
+    <ul>
+      <li><a href="personal.html">Why I Do It</a></li>
+      <li><a href="index.html">What I Do at School</a></li>
+      <li><a href="http://www.sunnysideup.life/sunnysideup.life/index.html">What I Think</a></li>
+      <li class="title"> Humanities </li>
+    </ul>
+
+  </div>
+
+  <!-- Tab links -->
+  <div class="tab">
+    <!-- <div class="dropdown"> -->
+    <button class="tablinks" onclick="openTab(event, 'formalWriting')">Writing</button>
+    <!-- <div class="dropdown-content">
+    <button class="tablinks" onclick="openTab(event, 'sa1')">Self-Assessment 1</button>
+    <button class="tablinks" onclick="openTab(event, 'hw')">Hanford-Washington</button>
+    <button class="tablinks" onclick="openTab(event, 'MathematicaOverview')">Overview</button>
+  </div>
+</div> -->
+    <button class="tablinks" onclick="openTab(event, 'Overview')">Overview</button>
+  </div>
+
+  <div id="formalWriting" class="tabcontent">
+
+    <h3>Writing</h3>
+    <p>Essays, musings, and everything in between.</p>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'bradbury')">Bradbury Essay</button>
+      <button class="tablinks" onclick="openTab(event, 'satire')">Satire Essay</button>
+      <button class="tablinks" onclick="window.location.href= 'http://www.sunnysideup.life/sunnysideup.life/writing/Walden/walden.html' ; ">Walden</button>
+      <button class="tablinks" onclick="window.location.href= 'http://www.sunnysideup.life/sunnysideup.life/writing/on_religion.html' ; ">On Religion</button>
+    </div>
+
+  </div>
+
+  <div id="bradbury" class="tabcontent">
+    <h3>Bradbury Essay</h3>
+    <div class="clearfix">
+      <embed src="docs/bradbury.pdf" type="application/pdf" class="pdf">
+    </div>
+  </div>
+
+  <div id="satire" class="tabcontent">
+    <h3>Satire Essay</h3>
+    <div class="clearfix">
+      <embed src="docs/satire.pdf" type="application/pdf" class="pdf">
+    </div>
+  </div>
+
+  <div id="Overview" class="tabcontent">
+    <h3>Overview</h3>
+    <p>
+      The central focus of our Humanities course was "What does it mean to be human?" We began by exploring how technology has affected humanity in the recent past. Next, we studied humanity from a biological perspective, namely neuroscience. From
+      there, we took a step back and looked at humanity through the lens of history. Finally, we examined the intricate workings of human society and how we people interact with one another.
+    </p>
+    <div class="center">
+      <img src="http://imgs.xkcd.com/comics/stories_of_the_past_and_future_large.png" alt="Stories of Past and Future XKCD">
+      <div> <a href="https://xkcd.com/"> Cartoon Courtesy of XKCD </a> </div>
+    </div>
+  </div>
+
+  <div id="Musings" class="tabcontent">
+    <h3>Musings</h3>
+    <p>
+    </p>
+  </div>
+</body>
+
+</html>

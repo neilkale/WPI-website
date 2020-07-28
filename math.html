@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styleSheets/myStyle.css">
+  <title>Math</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="js/tabs.js"></script>
+  <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+</head>
+
+<!-- Title and Nav Bar -->
+
+<body onload="foo">
+
+  <div>
+
+    <ul>
+      <li><a href="personal.html">Why I Do It</a></li>
+      <li><a href="index.html">What I Do at School</a></li>
+      <li><a href="http://www.sunnysideup.life/sunnysideup.life/index.html">What I Think</a></li>
+      <li class="title"> Math </li>
+    </ul>
+
+  </div>
+
+  <!-- Tab links -->
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Presentations')">Presentations</button>
+    <!-- <div class="dropdown"> -->
+    <button class="tablinks" onclick="openTab(event, 'Mathematica')">Mathematica</button>
+    <!-- <div class="dropdown-content">
+      <button class="tablinks" onclick="openTab(event, 'sa1')">Self-Assessment 1</button>
+      <button class="tablinks" onclick="openTab(event, 'hw')">Hanford-Washington</button>
+      <button class="tablinks" onclick="openTab(event, 'MathematicaOverview')">Overview</button>
+    </div>
+  </div> -->
+    <button class="tablinks" onclick="openTab(event, 'HiMCM')">HiMCM</button>
+    <button class="tablinks" onclick="openTab(event, 'Overview')">Overview</button>
+  </div>
+
+  <!-- Tab content -->
+  <div id="Mathematica" class="tabcontent">
+
+    <h3>Mathematica</h3>
+    <p>Various assignments/projects that I've conducted in this class using the Mathematica software.</p>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'TupperHigh')">Tupper High</button>
+      <button class="tablinks" onclick="openTab(event, 'sa1')">Self-Assessment 1</button>
+      <button class="tablinks" onclick="openTab(event, 'hw')">Hanford-Washington</button>
+      <button class="tablinks" onclick="openTab(event, 'MathematicaOverview')">What is Mathematica</button>
+    </div>
+
+  </div>
+
+  <div id="Presentations" class="tabcontent">
+
+    <h3>Presentations</h3>
+    <p>In Math, we are often tasked with developing a model of a real-world problem, and producing a evidence-backed
+      solution. Here are a couple of the presentations that I've collaborated on.</p>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Hired')">You're Hired</button>
+      <button class="tablinks" onclick="openTab(event, 'Paint')">Paint Gallery</button>
+      <button class="tablinks" onclick="openTab(event, 'GasProblem')">Gas Station Problem</button>
+      <button class="tablinks" onclick="openTab(event, 'CoalCompany')">MAMS Coal Company</button>
+    </div>
+
+  </div>
+
+  <div id="sa1" class="tabcontent">
+    <h3>Self-Assessment 1</h3>
+    <p>This assignment involved solving various graphing problems in Mathematica.</p>
+    <div class="clearfix">
+      <embed src="docs/sa1.pdf" type="application/pdf" class="pdf">
+
+    </div>
+  </div>
+
+  <div id="HiMCM" class="tabcontent">
+    <h3>HiMCM</h3>
+    <p>HiMCM, short for the High School Mathematical Contest in Modeling, is a 36-hour competition, which involves researching
+      a semi-vague problem, imagining possible solutions, modelling those solutions, and then submitting a cohesive paper to
+      communicate results. In our case, the problem was, paraphrased: "People charge their phones everywhere, this gross waste
+      of energy must be stopped!" Our group has a three part solution, but rather than summarize, I'll let you read the summary of the paper down below.
+      <div class="clearfix">
+        <embed src="docs/HiMCM.pdf" type="application/pdf" class="pdf">
+      </div>
+  </div>
+
+  <div id="hw" class="tabcontent">
+    <h3>Radioactivity in Hanford County, Washington</h3>
+    <p>Use data from various communities surrounding a nuclear facility in Washington to determine whether there is a higher mortality rate near the facility.</p>
+    <div class="clearfix">
+      <embed src="docs/l_hanford_2019.2020_kale.pdf" type="application/pdf" class="pdf">
+
+    </div>
+  </div>
+
+  <div id="Overview" class="tabcontent">
+    <h3>Overview</h3>
+    <p>
+      My curiosity is my armor, and my pen is my sword. Though the problems we tackle in this class are |beastly| (absolutely, positively), I’m eager to learn new techniques to take them down. There’s also an undeniable joy in finally vanquishing a
+      problem that you’ve been battling for the past week. Semper fi mathematica!
+    </p>
+    <div class="center">
+      <img src="https://imgs.xkcd.com/comics/purity.png" alt="Laws of Physics XKCD">
+      <div> <a href="https://xkcd.com/"> Cartoon Courtesy of XKCD </a> </div>
+    </div>
+  </div>
+
+  <div id="MathematicaOverview" class="tabcontent">
+    <h3>Mathematica Overview</h3>
+    <p>
+      Mathematica is a computing system which is used, not just in math,
+      but in most STEM-based fields. In this class, we most often used it for
+      its powerful ability to produce graphical models of data.
+    </p>
+  </div>
+
+  <div id="TupperHigh" class="tabcontent">
+    <h3>Tupper High</h3>
+    <p>Analyze survey data to help the football team at Tupper High determine the optimal price for season tickets.</p>
+    <div class="clearfix">
+      <embed src="docs/tupperHigh.pdf" type="application/pdf" class="pdf">
+
+    </div>
+  </div>
+
+  <div id="Hired" class="tabcontent">
+    <h3>You're Hired</h3>
+    <p>The challenge: Given enrollment and enrollment trends at a school, determine how many teachers should be hired for the upcoming school year.</p>
+    <div class="clearfix">
+      <embed src="docs/hired.pdf" type="application/pdf" class="pdf">
+
+    </div>
+  </div>
+
+  <div id="Paint" class="tabcontent">
+    <h3>Paint Gallery</h3>
+    <p>The challenge: Given a number of paintings and portable wall segments of a fixed size, place the wall segments so that the
+      maximum number of paintings can be seen in a rectangular gallery with cameras on two opposite corners. This problem came from a previous year's HiMCM.</p>
+    <div class="clearfix">
+      <embed src="docs/paint.pdf" type="application/pdf" class="pdf">
+
+    </div>
+  </div>
+
+  <div id="GasProblem" class="tabcontent">
+    <h3>Gas Station Problem</h3>
+    <p>The challenge: Is it better to go out of your way for cheaper gas, or to stay enroute and pay a little more.</p>
+    <div class="clearfix">
+      <embed src="docs/gasStation.pdf" type="application/pdf" class="pdf">
+
+    </div>
+  </div>
+
+  <div id="CoalCompany" class="tabcontent">
+    <h3>MAMS Coal Company</h3>
+    <p>The challenge: Determine how a Coal Company can most effectively minimize the time that trains are waiting to be filled, and maximize profits. This was
+      an optimization problem to the max (ba-dum-tsh) We did it in preparation for HiMCM, and I worked with the same (awesome) team. </p>
+    <div class="clearfix">
+      <embed src="docs/CoalCompany.pdf" type="application/pdf" class="pdf">
+
+    </div>
+  </div>
+
+</body>
+
+</html>

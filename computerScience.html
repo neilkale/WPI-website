@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styleSheets/myStyle.css">
+  <title>Computer Science</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="js/tabs.js"></script>
+</head>
+
+<!-- Title and Nav Bar -->
+
+<body>
+  <div>
+
+    <ul>
+      <li><a href="personal.html">Why I Do It</a></li>
+      <li><a href="index.html">What I Do at School</a></li>
+      <li><a href="http://www.sunnysideup.life/sunnysideup.life/index.html">What I Think</a></li>
+      <li class="title"> Computer Science </li>
+    </ul>
+
+  </div>
+
+  <!-- Tab links -->
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'website')">School Website</button>
+    <!-- <div class="dropdown"> -->
+    <button class="tablinks" onclick="openTab(event, 'aMaze')">aMaze</button>
+    <!-- <div class="dropdown-content">
+      <button class="tablinks" onclick="openTab(event, 'sa1')">Self-Assessment 1</button>
+      <button class="tablinks" onclick="openTab(event, 'hw')">Hanford-Washington</button>
+      <button class="tablinks" onclick="openTab(event, 'MathematicaOverview')">Overview</button>
+    </div>
+  </div> -->
+    <button class="tablinks" onclick="openTab(event, 'Overview')">Overview</button>
+  </div>
+
+  <div id="Overview" class="tabcontent">
+    <h3>Overview</h3>
+    <p>
+      Computer Science at MAMS covers many flavors of programming and design. I’ve learned that CS is more than coding with Red Bull,
+      and that “hacking” is often more about fixing things than breaking them.
+    </p>
+    <div class="center">
+      <img src="https://imgs.xkcd.com/comics/good_code.png" alt="Good Code XKCD">
+      <div> <a href="https://xkcd.com/"> Cartoon Courtesy of XKCD </a> </div>
+    </div>
+  </div>
+
+  <div id="website" class="tabcontent">
+
+    <h3>Websites</h3>
+    <p>Designing this website was the first major project of
+      Junior year. Working on these pages has helped me realize that CS requires creativity and imagination. In a way, it’s like learning
+      to paint - index.html is my first canvas.</p>
+    <p> So feel free to look around, take in the scenery, and read my tales! I strive to use my pixels as meaningfully as possible.</p>
+    <p> Applying the skills that I learned in this class, I also curate a few other sites: </p>
+    <p> <a href="http://www.sunnysideup.life/sunnysideup.life/index.html">sunnysideup.life</a> is my personal page, where I publish
+      my writing and other work. You can also reach this site through the "What I Think" tab in the Navigation bar. </p>
+    <p> <a href="http://www.mamsmag.wordpress.com/">mamsmag.wordpress.com</a> is for the Mass Academy community. There are so many talented people around here,
+      I thought we should have a platform to exhibit those talents. It's not handcoded, but it's still made with love. </p>
+  </div>
+
+  <div id="aMaze" class="tabcontent">
+
+    <h3>aMaze</h3>
+    <p>Since I self-learned Java over the summer, I had the opportunity to join the Advanced CS class this year.
+      Rather than redo basic Java, we were allowed to pursue self-directed CS projects. My project, "aMaze", focuses
+      on creating and solving mazes! </p>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'aMazeCode')">The Code</button>
+      <button class="tablinks" onclick="openTab(event, 'aMazeSolve')">Maze Solving</button>
+      <button class="tablinks" onclick="openTab(event, 'aMazeCreate')">Maze Creating</button>
+      <button class="tablinks" onclick="openTab(event, 'aMazePlan')">The Plan</button>
+    </div>
+
+  </div>
+
+  <div id="aMazePlan" class="tabcontent">
+    <h3>The Plan</h3>
+    <p>Below is my initial Project Proposal, which gives a good overview of my project.</p>
+    <div class="clearfix">
+    <embed src="docs/CSProjectRequirements.pdf" type="application/pdf" class="pdf">
+    </div>
+  </div>
+
+  <div id="aMazeSolve" class="tabcontent">
+    <h3>Maze Solving</h3>
+    <p>The current technique being used to solve the mazes is dubbed "Wall-Follower". This algorithm works by sticking to the right wall of the path, and simply travelling until it reaches the endpoint. While it's not as fast as some other algorithms such as A*, or Dijkstra's, wall-follower assumes no prior knowledge of the maze.
+    Like a firefighter heading into a burning building, it assumes that you're going in blind. Of
+    course, in some cases, there are floor plans and other such guides, and in those cases another
+    algorithm may model the situation better. An interesting extension to explore would be determining
+     which algorithm works better in mazes where some aspects are known, such as the structure of the
+      maze, but others aren't - for example, some pathways might be blocked off (consider debris or others
+      hazards which wouldn't exist on a floor plan) Perhaps some mixture of the two algorithms would
+    work best. Or perhaps, a totally different approach would be required.</p>
+  </div>
+
+  <div id="aMazeCreate" class="tabcontent">
+    <h3>Maze Creating</h3>
+    <p>To create mazes, I used a technique known as the "Recursive Backtracker". Imagine this algorithm like a miniature bulldozer in a solid square. You start it at a point, and let it travel in random directions, plowing a path wherever it goes.</p>
+    <p>The only rule is that it can't travel where a path has already been created, or leave the square. Once it reaches a point from where it can no longer go any farther, it will return to the last position and begin digging from there again. Once that path has been exhausted, it will again return to last position, and so forth. </p>
+  </div>
+
+  <div id="aMazeCode" class="tabcontent">
+    <h3>aMaze Code</h3>
+    <p>The code for this project, can be found on my GitHub:</p>
+    <a href="https://github.com/neilkale/aMaze"> https://github.com/neilkale/aMaze </a>
+  </div>
+
+</body>
+
+</html>

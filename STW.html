@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styleSheets/myStyle.css">
+	<title>STW</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/tabs.js"></script>
+	<link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+</head>
+
+<!-- Title and Nav Bar -->
+
+<body>
+
+	<div>
+
+		<ul>
+			<li><a href="personal.html">Why I Do It</a></li>
+			<li><a href="index.html">What I Do at School</a></li>
+			<li><a href="http://www.sunnysideup.life/sunnysideup.life/index.html">What I Think</a></li>
+			<li class="title"> STEM / STW </li>
+		</ul>
+
+	</div>
+
+	<!-- Tab links -->
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event, 'ProjectBrief')">Project Brief</button>
+		<!-- <div class="dropdown"> -->
+		<button class="tablinks" onclick="openTab(event, 'LiteratureReview')">Literature Review</button>
+		<!-- <div class="dropdown-content">
+      <button class="tablinks" onclick="openTab(event, 'sa1')">Self-Assessment 1</button>
+      <button class="tablinks" onclick="openTab(event, 'hw')">Hanford-Washington</button>
+      <button class="tablinks" onclick="openTab(event, 'MathematicaOverview')">Overview</button>
+    </div>
+  </div> -->
+		<button class="tablinks" onclick="openTab(event, 'ProjectNotes')">Project Notes</button>
+		<button class="tablinks" onclick="openTab(event, 'StatsPresentation')">Statistics Presentation</button>
+	</div>
+
+	<div>
+
+		<div id="ProjectBrief" class="tabcontent">
+			<h3>Project Brief</h3>
+			<p>This was the initial project proposal that was submitted for review to the IRB and SEFOS. In order for my project to proceed, this document had to be approved.</p>
+			<div class="clearfix">
+				<embed src="docs/ProjectBrief.pdf" type="application/pdf" class="pdf">
+
+			</div>
+		</div>
+
+		<div id="LiteratureReview" class="tabcontent">
+			<h3>Literature Review</h3>
+			<p>The Literature Review is a summary of the information that was gathered over the course of this project. It gives credit to the prior research that made this work possible. In Isaac Newton's words, "If I have seen farther than other men, it
+				is because I have stood on the shoulders of giants." Research is all about looking past the current boundaries of science. As such, as a researcher, I needed all the help I could get! The extent of that help is documented in the Lit Review.
+			</p>
+			<div class="clearfix">
+				<embed src="docs/LiteratureReview.pdf" type="application/pdf" class="pdf">
+
+			</div>
+		</div>
+
+		<div id="ProjectNotes" class="tabcontent">
+			<h3>Project Notes</h3>
+			<p>Similar to the Lit Review, the Project Notes also cover the sources that helped me during this project, albeit more informally. Whereas the Literature Review is a relatively concise summary, the Project Notes sprawl out over 40 pages. They
+				include everything from people of interest, to identified song databases, to extensive notes on pertinent articles. If the STEM Poster Board is the shining glass exterior of a skyscraper, the Project Notes is the steel and concrete
+				infrastructure that makes it possible. </p>
+			<div class="clearfix">
+				<embed src="docs/ProjectNotes.pdf" type="application/pdf" class="pdf">
+
+			</div>
+		</div>
+
+		<div id="StatsPresentation" class="tabcontent">
+			<h3>Statistics Presentation</h3>
+			<p>I entered STEM 1 with close to zero experience with statistics. In order to quickly learn enough to undertake a STEM project, we were broken into small teams which each explored a different statistical test. We then came together and
+				explained our test to the other groups, and each of them did the same. In this way, we not only quickly gained a broad understanding of Statistical tests, but became experts in one particular analysis. We could then use our knowledge to help
+				others who needed it, and gain help from those who had strong understanding of the statistical tests which we ourselves needed.</p>
+			<div class="clearfix">
+				<embed src="docs/StatisticsPresentation.pdf" type="application/pdf" class="pdf">
+
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
