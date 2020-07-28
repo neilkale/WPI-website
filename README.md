@@ -1,2 +1,2 @@
-# WPI-website: www.users.wpi.edu/~nakale
+# WPI-website: http://users.wpi.edu/~nakale/
 A backup of my school website, linked above.
